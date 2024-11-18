@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | DVO-AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DVO-AI</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Revolutionizing Business Efficiency</h2>
+            <p>Welcome to DVO-AI, where innovation meets productivity. We specialize in creating cutting-edge AI solutions to help businesses streamline their workflows, save time, and unlock their true potential.</p>
+        </section>
+        <section class="details">
+            <h2>Why Choose DVO-AI?</h2>
+            <p>DVO-AI empowers your business with intelligent tools that optimize emails, calls, and communication workflows. Our mission is to eliminate repetitive tasks, allowing your team to focus on creativity and strategic growth.</p>
+            <p>With state-of-the-art natural language processing and machine learning technologies, DVO-AI adapts to your specific needs. From automating email responses to managing customer interactions, we make complex operations seamless and effortless.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 DVO-AI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll animation for elements
+        const details = document.querySelector('.details');
+        window.addEventListener('scroll', () => {
+            const rect = details.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                details.classList.add('slide-in');
+            }
+        });
+    </script>
+</body>
+</html>
