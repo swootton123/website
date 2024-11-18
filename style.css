@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Slightly lighter black */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #00ccff; /* Accent color */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Animation Styles */
+.details {
+    opacity: 0;
+    transform: translateX(-50px); /* Initially offset to the left */
+    transition: all 0.8s ease-in-out;
+}
+
+.details.slide-in {
+    opacity: 1;
+    transform: translateX(0); /* Slide into place */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #999; /* Gray footer text */
+}
